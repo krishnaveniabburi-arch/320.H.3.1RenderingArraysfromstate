@@ -1,11 +1,11 @@
-import score from './Score'
-export default function learner({learner}) {
+import Score from './Score'
+export default function Learner({learner}) {
     return (
         <div>
             <p>{learner.name} {learner.bio}</p>
 
             {learner.scores.map((score, index) => (
-                <score key={index} scoreData={score} />
+                <Score key={index} scoreData={score} />
             ))}
         </div>
     )
